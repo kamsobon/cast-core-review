@@ -75,10 +75,6 @@
                           </de:folder>
                           <de:folder name="generator">
                             <de:file name="SchemaDataSetGenerator.java">
-                              <de:comment id="c13" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:17:13.073+02:00" last-modified="2013-04-18T16:17:32.944+02:00" priority="0" recipient="" status="0" revision="0">
-                                <de:text>Dodaj switcha, lepiej pasuje niz if-else</de:text>
-                                <de:replies/>
-                              </de:comment>
                               <de:comment id="c14" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:17:58.711+02:00" last-modified="2013-04-18T16:18:28.773+02:00" priority="0" recipient="" status="0" revision="0">
                                 <de:text>Po co opakowywac ten wyjatek ?</de:text>
                                 <de:replies/>
