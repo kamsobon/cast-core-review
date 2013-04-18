@@ -15,7 +15,7 @@
                         <de:folder name="property">
                           <de:folder name="validator">
                             <de:file name="ExternalIdentifierCollectionPropertyValidator.java">
-                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-04-18T09:30:29.686+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-04-18T13:54:08.137+02:00" priority="0" recipient="" status="0" revision="0">
                                 <de:text>Bartek zmieni tą linijk ze wzgldu na serializatory custom propertiesów. Czy coś zmienialeś w tej logice ? Czy można to przywrócic ?
 
 Prawdopodbnie bedziesz mogl to przywrocic jak tylko skonczysz prace nad CAST-1988</de:text>
@@ -153,21 +153,23 @@ GML_FILE_EXTENSION = DATA_SOURCE_DIRECTORY</de:text>
                               <de:text>Ja bym scali użycie tej metody jakoś z getDataSet(UUID, IProgressStatusMonitor). One docelowo dzialaja tak samo bo deleguja zadanie do SchemGmlReader#readFile(). Różnicą jest sposob wyznaczenia sciezki do pliku. Tak czy siak jedna powinna korzytac z drugiej.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c61" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:48:26.768+02:00" last-modified="2013-04-18T09:49:00.132+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c61" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:48:26.768+02:00" last-modified="2013-04-18T12:41:59.231+02:00" priority="0" recipient="" status="2" revision="0">
+                              <de:text>Co to znaczy, że ta metoda jest tylko do testowania ?</de:text>
+                              <de:replies>
+                                <de:reply author="nowak" creation-date="2013-04-18T12:41:00.557+02:00">Bartek oparł testy GML na plikach GML stworzonych ręcznie. Jak dobrze rozumiem - nie powinno być możliwości odzcytywania z dowolnego pliku, tylko na podstawie UUID.</de:reply>
+                              </de:replies>
+                            </de:comment>
+                            <de:comment id="c62" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:49:06.104+02:00" last-modified="2013-04-18T12:42:24.838+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Co to znaczy, że ta metoda jest tylko do testowania ?</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c62" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:49:06.104+02:00" last-modified="2013-04-18T09:49:09.065+02:00" priority="0" recipient="" status="0" revision="0">
-                              <de:text>Co to znaczy, że ta metoda jest tylko do testowania ?</de:text>
-                              <de:replies/>
-                            </de:comment>
-                            <de:comment id="c63" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:02:15.852+02:00" last-modified="2013-04-18T10:07:25.452+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c63" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:02:15.852+02:00" last-modified="2013-04-18T12:48:46.635+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Chodzio mi bardziej o to, żeby stworzy metod loadDataSetDescriptors(). Dlaczego obecne rozwiązanie mi si nei podoba ? Metoda getDataSetDescriptors() zwraca wartośc - NOWO stworzona kolekcje - a my tego do nieczego nie wykorzystujemy.
 
 Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c64" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:14:18.857+02:00" last-modified="2013-04-18T10:14:50.319+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c64" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:14:18.857+02:00" last-modified="2013-04-18T12:49:28.308+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Moim zdaniem ta metoda nie jest potrzbna. Można po prostu wywolac samemu: getDataSet(id, null)</de:text>
                               <de:replies/>
                             </de:comment>
@@ -205,19 +207,19 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                               <de:text>Ta i ponizsze metody prywtane sa czesto uzywane. Przydalo by sie opisac co robia</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c66" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:54:39.440+02:00" last-modified="2013-04-18T10:57:34.394+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c66" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:54:39.440+02:00" last-modified="2013-04-18T12:50:57.811+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Tu powinien poleciec IllegalArgumentException</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c67" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:03:42.716+02:00" last-modified="2013-04-18T11:04:01.657+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c67" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:03:42.716+02:00" last-modified="2013-04-18T12:51:18.835+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Jesli to jest nieuzywane to mozemy to wyrzucic - metoda jest prosta wiec bedzie latwo ja odtworzyc.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c68" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:04:17.552+02:00" last-modified="2013-04-18T11:04:57.698+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c68" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:04:17.552+02:00" last-modified="2013-04-18T12:52:47.106+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Ten blok kodu jest neizmiernie czesto powtarzany - wyrzuc to do nowej metody (jak sie okaze ze wywolywanie tej metody zajmuje za duzo czasu to sie nad tym jeszce raz zastanpowimy)</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c69" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:05:57.318+02:00" last-modified="2013-04-18T11:06:11.805+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c69" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:05:57.318+02:00" last-modified="2013-04-18T12:53:33.275+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Raczej "writeData" - jesli jeszce gdzies jest export to to popraw.</de:text>
                               <de:replies/>
                             </de:comment>
@@ -235,13 +237,13 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                               <de:text>Czy tutaj wyjatek nie bylby odpowiedniejszy ? Ogólnie wydaje mi si że ta metoda powinna wyrzucą tylko jeden wyjątek informujący o tym że nie udalo sie przeczytac deskryptor.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c34" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:12:06.092+02:00" last-modified="2013-04-18T10:28:07.566+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c34" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:12:06.092+02:00" last-modified="2013-04-18T12:32:57.426+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Metoda powinna wyrzucą tylko jeden wyjątek informujący o tym że nie udalo sie przeczytac deskryptor.</de:text>
                               <de:replies>
                                 <de:reply author="Kamil Soboń" creation-date="2013-04-18T10:28:07.566+02:00">Oczywiśćie pomyliłem się. Błąd powinien sygnalizować, że nie udało się wczytać zbioru danych a nie deskryoptora (to może być tylko jeden z powodłw dla którego cała operacja sie nei powiodla)</de:reply>
                               </de:replies>
                             </de:comment>
-                            <de:comment id="c35" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:13:45.836+02:00" last-modified="2013-04-18T10:22:44.995+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c35" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:13:45.836+02:00" last-modified="2013-04-18T12:33:26.991+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Czy to jest w ogóle potrzbne ? Co z tego że plik jest w trybie tylko do odczytu ? Przecież chcemy go tylko przeczytac</de:text>
                               <de:replies>
                                 <de:reply author="nowak" creation-date="2013-04-09T15:29:31.616+02:00">Tak było w CAST-1764.
@@ -257,7 +259,7 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                               <de:text>Co jeśli pojawi sie blad ? Trzeba by zamknac ten Progress monitor</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c65" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:28:15.770+02:00" last-modified="2013-04-18T10:28:42.224+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c65" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:28:15.770+02:00" last-modified="2013-04-18T12:50:30.211+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Co jesli poleci jakis Runtimeowy wyjatek ? Ja bym lapal tu wszystko i opakowywal w nowy wyjatek GMLException.</de:text>
                               <de:replies/>
                             </de:comment>
@@ -288,21 +290,21 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                                 <de:text>Niepotrzbny unchecked tu i ponizej - do wywalenia</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c46" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:32:57.995+02:00" last-modified="2013-04-18T11:57:15.318+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c46" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:32:57.995+02:00" last-modified="2013-04-18T14:21:30.169+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Wrzuc "cialo" tego switcha do jakiejs prywatnej metody- bedzie to czytelniejsze.</de:text>
                                 <de:replies>
                                   <de:reply author="Kamil Soboń" creation-date="2013-04-18T11:25:16.840+02:00">Co z tym ? W ogóle obsługę każdego z tych tokenów władowałbym do prywatnej metody. ten Switch jest nieczytelny.</de:reply>
                                 </de:replies>
                               </de:comment>
-                              <de:comment id="c72" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:26:36.497+02:00" last-modified="2013-04-18T11:26:48.868+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c72" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:26:36.497+02:00" last-modified="2013-04-18T13:11:51.083+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Co tu si dzieje ? Na szybo nie widze tego wkodzie, moze jakis komentarz ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c73" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:27:05.484+02:00" last-modified="2013-04-18T11:27:22.207+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c73" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:27:05.484+02:00" last-modified="2013-04-18T13:12:20.675+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Dlaczego wiazemy si etu konkretnie z ArrayLista ? a nie interfejsem List ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c74" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:27:42.604+02:00" last-modified="2013-04-18T11:28:14.259+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c74" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:27:42.604+02:00" last-modified="2013-04-18T13:13:15.622+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Ciągle instancjonujmey ta beidna klase, nie wystarczy je zainstanckjonowac raz ? Zmieniamy jej stan w kazdym wytwolaniu metody processToken(...) ?</de:text>
                                 <de:replies/>
                               </de:comment>
@@ -316,7 +318,7 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                                 <de:text>A jakie sa wymagane ? Mozna by to uscislic</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c41" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:27:46.900+02:00" last-modified="2013-04-18T11:21:41.616+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c41" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-08T15:27:46.900+02:00" last-modified="2013-04-18T12:37:44.680+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Jako ze mamy juz builder do konstruowania MetaProperty to nie trzba dodatkowych zmiennych do przechoywania wartosci atrybutow MP.</de:text>
                                 <de:replies>
                                   <de:reply author="nowak" creation-date="2013-04-09T15:48:22.969+02:00">Zmienne przydaja się do sprawdzenia jakich brakuje atrybutów przy rzucaniu wyjątku.</de:reply>
@@ -337,7 +339,7 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                                 <de:text>Uszczegolowilbbym ktorego brakuje</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c71" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:16:07.624+02:00" last-modified="2013-04-18T11:17:27.809+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c71" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:16:07.624+02:00" last-modified="2013-04-18T12:56:50.929+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Rozbilbym to na 3 rozne sprawdzenia. Jesli brakuje jakiegoklolwiek atrybutu to wystarczy ze poleci blad o tym ze brakuje jednego z nich, nie musimy tych informacji konkatenowac.</de:text>
                                 <de:replies/>
                               </de:comment>
@@ -365,11 +367,11 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                                 <de:text>Jak sensowne jest podzilic to na NodeInjectior i ConnectionInjector ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c80" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:46:18.438+02:00" last-modified="2013-04-18T11:47:06.662+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c80" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:46:18.438+02:00" last-modified="2013-04-18T14:22:57.024+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Co tu jest sprawdzane ? Moge si etylko domyslac ze w prze dziwny (bitowy) sposob parzystosc. Jesli tak to komuniakt bledu moglby byc sensowniejszy.</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c82" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:50:39.856+02:00" last-modified="2013-04-18T11:51:18.387+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c82" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:50:39.856+02:00" last-modified="2013-04-18T13:34:13.818+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Ten wyjatek powinien byc wyrzucona przez EdgeInjectora. Ta metoda powinna co najwyzej informowac ze nie mozna stworzyc elementu grafu.</de:text>
                                 <de:replies/>
                               </de:comment>
@@ -391,36 +393,36 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                                 <de:text>Nie patrzylem dokladnie jak dziaa ta klasa ale ztasnów sie czy nie latwiej byloby wykorzystac mechanizm szablonow c-typow czyli CustomTypeService (pewnie trzeba by go lekko zmodyfikowac) + CustomTypeTemplateRegistry. Przyklad dzialania masz w trunku w DataSetGenerator - jak bedziesz mial pytania to pytaj :)</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c76" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:31:55.781+02:00" last-modified="2013-04-18T11:32:08.584+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c76" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:31:55.781+02:00" last-modified="2013-04-18T13:14:07.885+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Dlaczego ArrayList a nie List ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c77" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:32:41.470+02:00" last-modified="2013-04-18T11:34:06.780+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c77" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:32:41.470+02:00" last-modified="2013-04-18T13:15:04.994+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Ten wyjatek powinien byc wyrzucany jesli cokolwiek pojdzie nie tak. W szczegolnsci wyrzucanie innego wyjatku w lini 114 nie ma sensu.
 Moim zdaniem lepiej by bylo opakowac cala to metode w try-catch i wyrzucac ten wyjatek jesli cos sie posypie</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c78" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:41:03.469+02:00" last-modified="2013-04-18T11:41:44.171+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c78" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:41:03.469+02:00" last-modified="2013-04-18T13:15:28.166+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Nie musisz tego sprawdzac - builder szablonow sprawdzi odpowiednie atrybuty przy budowaniu.</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c79" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:42:35.680+02:00" last-modified="2013-04-18T11:43:08.845+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c79" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:42:35.680+02:00" last-modified="2013-04-18T13:19:46.408+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Czym sie rozni ta metoda od proccessCtypeTemplates(...) ? moim zdaniem one sa jakos stucznie rozdzielone.</de:text>
                                 <de:replies/>
                               </de:comment>
                             </de:file>
                             <de:file name="ISchemaDataSetInjector.java">
-                              <de:comment id="c75" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:30:44.048+02:00" last-modified="2013-04-18T11:31:16.124+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c75" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:30:44.048+02:00" last-modified="2013-04-18T13:13:37.042+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Ta metoda jest niepotrzebna, skoro w tej drugiej mozna przekazac null'a - niepotrzbnie tylko "komplikue" ten prosty interfejs.</de:text>
                                 <de:replies/>
                               </de:comment>
                             </de:file>
-                            <de:file name="NodeInjector.java">
-                              <de:comment id="c81" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:49:42.524+02:00" last-modified="2013-04-18T11:49:46.051+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:file name="NodeInjectoGe.araa">
+                              <de:comment id="c81" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:49:42.524+02:00" last-modified="2013-04-18T13:23:03.766+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Switch ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c83" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:53:14.492+02:00" last-modified="2013-04-18T11:53:37.943+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c83" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:53:14.492+02:00" last-modified="2013-04-18T13:34:27.522+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Mysle ze to jednak pownien byc Gnerator - musimy to przedyskutowac.</de:text>
                                 <de:replies/>
                               </de:comment>
