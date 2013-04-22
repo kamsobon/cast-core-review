@@ -14,7 +14,7 @@
                       <de:folder name="model">
                         <de:folder name="assertion">
                           <de:file name="DataModelAssertions.java">
-                            <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1984" creation-date="2013-04-19T10:14:05.944+02:00" last-modified="2013-04-19T10:15:11.419+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1984" creation-date="2013-04-19T10:14:05.944+02:00" last-modified="2013-04-22T12:54:03.016+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Na podstawie tego co zmieniales w tym pliku widac ze w 3 roznych miejsach robimy asercje MetaProperty - przydaloby sie stworzyc nowa metode do asercji MetaProperty</de:text>
                               <de:replies/>
                             </de:comment>
@@ -42,12 +42,12 @@
                       <de:folder name="gml">
                         <de:folder name="core">
                           <de:file name="SchemaDataSourceTest.java">
-                            <de:comment id="c1" author="Kamil Soboń" reviewID="CAST-1984" creation-date="2013-04-19T10:17:23.289+02:00" last-modified="2013-04-19T10:18:43.688+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c1" author="Kamil Soboń" reviewID="CAST-1984" creation-date="2013-04-19T10:17:23.289+02:00" last-modified="2013-04-22T12:29:53.043+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>W tej klasie testujemy persystencje przy pomocy SchemaDataSourceTest. Zatem ten test powinien sprawdzac czy meta property ma flage usuwania ustawiona na "true" a nie sprawdzyc czy mozemy ja usunac.
 Jesli mielibysmy blad w mechanizmie usuwania wlasciwosci (a persystencja dziala by poprawnie) i nie polecialby wyjatek to ten test by nie przeszedl - czy to by oznaczalo ze persystencja jest zle napisana ?</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c2" author="Kamil Soboń" reviewID="CAST-1984" creation-date="2013-04-19T10:20:24.899+02:00" last-modified="2013-04-19T10:20:39.611+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c2" author="Kamil Soboń" reviewID="CAST-1984" creation-date="2013-04-19T10:20:24.899+02:00" last-modified="2013-04-22T12:30:16.171+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Jak zobaczysz w opisnie buildera do MP domyslnie REMOVABLE=false wiec .removable(false) jest niepotrzbne</de:text>
                               <de:replies/>
                             </de:comment>
