@@ -15,7 +15,7 @@
                         <de:folder name="property">
                           <de:folder name="validator">
                             <de:file name="ExternalIdentifierCollectionPropertyValidator.java">
-                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-04-18T13:54:08.137+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-04-22T11:03:26.002+02:00" priority="0" recipient="" status="0" revision="0">
                                 <de:text>Bartek zmieni tą linijk ze wzgldu na serializatory custom propertiesów. Czy coś zmienialeś w tej logice ? Czy można to przywrócic ?
 
 Prawdopodbnie bedziesz mogl to przywrocic jak tylko skonczysz prace nad CAST-1988</de:text>
@@ -223,7 +223,7 @@ Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:tex
                               <de:text>Raczej "writeData" - jesli jeszce gdzies jest export to to popraw.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c70" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:13:21.987+02:00" last-modified="2013-04-18T11:13:54.307+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c70" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T11:13:21.987+02:00" last-modified="2013-04-22T11:49:35.133+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>To zalozenie jest zvyt optymistyczne :) Musimy zapisac WSZYSTKIE c-typy ktore zostaly zdefiniowane w zbiorze danych.</de:text>
                               <de:replies/>
                             </de:comment>
