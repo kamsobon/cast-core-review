@@ -14,62 +14,58 @@
                       <de:folder name="gml">
                         <de:folder name="core">
                           <de:file name="SchemaGmlWriter.java">
-                            <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:38:46.693+02:00" last-modified="2013-04-22T11:58:54.624+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:38:46.693+02:00" last-modified="2013-05-07T13:27:46.505+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Do czego suży ta linijka ?</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c1" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:39:06.204+02:00" last-modified="2013-04-22T11:58:57.704+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c1" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:39:06.204+02:00" last-modified="2013-05-07T13:27:50.064+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Enter tutaj jest zbdny</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c2" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:40:00.928+02:00" last-modified="2013-04-22T12:00:35.704+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c2" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:40:00.928+02:00" last-modified="2013-05-07T13:28:27.049+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Poprosze o komentarz czym są te dodatkowe atrybuty (adnotowane @Value)</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c3" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:41:22.326+02:00" last-modified="2013-04-22T12:02:37.278+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c3" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:41:22.326+02:00" last-modified="2013-05-07T13:28:39.925+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Komentarz czym są te connection attributes</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c4" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:47:19.039+02:00" last-modified="2013-04-22T12:03:19.270+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c4" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:47:19.039+02:00" last-modified="2013-05-07T13:28:57.086+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Ten serializator chyba nie jest tu potrzbny ? To jest przerost formy nad treścia.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c5" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:51:05.787+02:00" last-modified="2013-04-22T12:05:12.741+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c5" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:51:05.787+02:00" last-modified="2013-05-07T13:29:37.526+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Komentarz co tu si dzieje :)</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c6" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:51:36.596+02:00" last-modified="2013-04-22T12:05:47.325+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c6" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:51:36.596+02:00" last-modified="2013-05-07T13:29:44.649+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Moim zdaniem nadużywasz ENTERów. Dobrze jest oddzielac enterem bloki kodu, ktore nie sa ze soba spokrewnione. Tu bym enetera nie dawal. Po wywaleniu enetra przenies ten marker komentarza linijke wyzej.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c7" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:52:12.969+02:00" last-modified="2013-04-22T12:06:57.604+02:00" priority="0" recipient="" status="2" revision="0">
+                            <de:comment id="c7" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:52:12.969+02:00" last-modified="2013-05-07T13:30:13.301+02:00" priority="0" recipient="" status="1" revision="0">
                               <de:text>Tu entera tez bym nie dawal.  Po wywaleniu enetra przenies ten marker komentarza linijke wyzej.</de:text>
                               <de:replies/>
                             </de:comment>
                           </de:file>
                           <de:folder name="injector">
                             <de:file name="NodeInjector.java">
-                              <de:comment id="c8" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T15:58:08.971+02:00" last-modified="2013-04-22T12:08:33.593+02:00" priority="0" recipient="" status="2" revision="0">
-                                <de:text>Po co ten Supprese ? Przeciez można użyc generic wildcards (unbounded): http://docs.oracle.com/javase/tutorial/extra/generics/wildcards.html</de:text>
-                                <de:replies/>
-                              </de:comment>
-                              <de:comment id="c9" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:05:35.302+02:00" last-modified="2013-04-22T12:11:35.786+02:00" priority="0" recipient="" status="2" revision="0">
+                              <de:comment id="c9" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:05:35.302+02:00" last-modified="2013-05-07T13:32:26.864+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Miales racje ze geoShapeTypeId to to samo co geoShapeType. Nie musimy serializowac tego ISchemaGeoShape#getGeoShapeType. Nie wiem jak ja to sprawdzaem. Wywal wszystko co jest z tym związane.</de:text>
                                 <de:replies/>
                               </de:comment>
                             </de:file>
                             <de:file name="EdgeInjector.java">
-                              <de:comment id="c10" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:09:57.515+02:00" last-modified="2013-04-22T12:23:22.502+02:00" priority="0" recipient="" status="2" revision="0">
+                              <de:comment id="c10" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:09:57.515+02:00" last-modified="2013-05-07T13:33:41.686+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Nie do końca rozumiem po co ten try-catch ?</de:text>
                                 <de:replies>
                                   <de:reply author="nowak" creation-date="2013-04-22T12:15:04.126+02:00">Przy pobieraniu serializatora z providera może być rzucony wyjątek NotSerializableException. opakowuję go w GmlException, żeby być zgodnym z nagłówkiem metody inject.</de:reply>
                                 </de:replies>
                               </de:comment>
-                              <de:comment id="c11" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:12:05.928+02:00" last-modified="2013-04-22T12:15:38.616+02:00" priority="0" recipient="" status="2" revision="0">
+                              <de:comment id="c11" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:12:05.928+02:00" last-modified="2013-05-07T13:34:08.752+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Po co to rzutowanie do Integera ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c12" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:14:37.106+02:00" last-modified="2013-04-22T12:23:33.042+02:00" priority="0" recipient="" status="2" revision="0">
+                              <de:comment id="c12" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:14:37.106+02:00" last-modified="2013-05-07T13:34:19.081+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Nie jestem pewien czy opakowywanie tego NotSerializableException jest potrzbne tutaj. Raczej moim zdaniem nie ma to sensu tak jak na poczatku tej metody, ale mozemy nad tym podyskutowac :)</de:text>
                                 <de:replies/>
                               </de:comment>
@@ -77,11 +73,11 @@
                           </de:folder>
                           <de:folder name="generator">
                             <de:file name="SchemaDataSetGenerator.java">
-                              <de:comment id="c14" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:17:58.711+02:00" last-modified="2013-04-22T12:24:15.621+02:00" priority="0" recipient="" status="2" revision="0">
+                              <de:comment id="c14" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:17:58.711+02:00" last-modified="2013-05-07T13:35:52.727+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Po co opakowywac ten wyjatek ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c15" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:18:35.328+02:00" last-modified="2013-04-22T12:24:24.210+02:00" priority="0" recipient="" status="2" revision="0">
+                              <de:comment id="c15" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:18:35.328+02:00" last-modified="2013-05-07T13:35:55.959+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Po co opakowywac ten wyjatek ?</de:text>
                                 <de:replies/>
                               </de:comment>
