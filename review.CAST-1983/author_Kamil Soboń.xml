@@ -15,7 +15,7 @@
                         <de:folder name="property">
                           <de:folder name="validator">
                             <de:file name="ExternalIdentifierCollectionPropertyValidator.java">
-                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-05-07T10:29:07.222+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-05-13T13:19:31.934+02:00" priority="0" recipient="" status="0" revision="0">
                                 <de:text>Bartek zmieni tą linijk ze wzgldu na serializatory custom propertiesów. Czy coś zmienialeś w tej logice ? Czy można to przywrócic ?
 
 Prawdopodbnie bedziesz mogl to przywrocic jak tylko skonczysz prace nad CAST-1988</de:text>
@@ -167,7 +167,7 @@ Co do samych testów to jak mniemam SchemaDataSource wprowadza nam abstrakcję p
                                 <de:reply author="ksobon" creation-date="2013-05-07T10:36:47.556+02:00">To samo tutaj</de:reply>
                               </de:replies>
                             </de:comment>
-                            <de:comment id="c63" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:02:15.852+02:00" last-modified="2013-05-07T10:38:38.511+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c63" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T10:02:15.852+02:00" last-modified="2013-05-13T13:22:30.750+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Chodzio mi bardziej o to, żeby stworzy metod loadDataSetDescriptors(). Dlaczego obecne rozwiązanie mi si nei podoba ? Metoda getDataSetDescriptors() zwraca wartośc - NOWO stworzona kolekcje - a my tego do nieczego nie wykorzystujemy.
 
 Mysle ze mozemy ta inicjalizacje deskryptorow przeniesc do konstruktora.</de:text>
