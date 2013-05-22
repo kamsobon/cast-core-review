@@ -15,7 +15,7 @@
                         <de:folder name="core">
                           <de:folder name="generator">
                             <de:file name="NodeGenerator.java">
-                              <de:comment id="c0" author="ksobon" reviewID="CAST-1987" creation-date="2013-05-07T13:31:41.931+02:00" last-modified="2013-05-07T13:31:44.657+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c0" author="ksobon" reviewID="CAST-1987" creation-date="2013-05-07T13:31:41.931+02:00" last-modified="2013-05-14T09:35:14.787+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Po co ten Supprese ? Przeciez można użyc generic wildcards (unbounded): http://docs.oracle.com/javase/tutorial/extra/generics/wildcards.html</de:text>
                                 <de:replies/>
                               </de:comment>

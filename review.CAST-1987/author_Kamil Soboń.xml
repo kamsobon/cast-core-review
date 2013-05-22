@@ -54,7 +54,19 @@
                                 <de:replies/>
                               </de:comment>
                             </de:file>
-                            <de:file name="EdgeInjector.java">
+                          </de:folder>
+                          <de:folder name="generator">
+                            <de:file name="SchemaDataSetGenerator.java">
+                              <de:comment id="c14" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:17:58.711+02:00" last-modified="2013-05-07T13:35:52.727+02:00" priority="0" recipient="" status="1" revision="0">
+                                <de:text>Po co opakowywac ten wyjatek ?</de:text>
+                                <de:replies/>
+                              </de:comment>
+                              <de:comment id="c15" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:18:35.328+02:00" last-modified="2013-05-07T13:35:55.959+02:00" priority="0" recipient="" status="1" revision="0">
+                                <de:text>Po co opakowywac ten wyjatek ?</de:text>
+                                <de:replies/>
+                              </de:comment>
+                            </de:file>
+                            <de:file name="EdgeGenerator.java">
                               <de:comment id="c10" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:09:57.515+02:00" last-modified="2013-05-07T13:33:41.686+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Nie do końca rozumiem po co ten try-catch ?</de:text>
                                 <de:replies>
@@ -67,18 +79,6 @@
                               </de:comment>
                               <de:comment id="c12" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:14:37.106+02:00" last-modified="2013-05-07T13:34:19.081+02:00" priority="0" recipient="" status="1" revision="0">
                                 <de:text>Nie jestem pewien czy opakowywanie tego NotSerializableException jest potrzbne tutaj. Raczej moim zdaniem nie ma to sensu tak jak na poczatku tej metody, ale mozemy nad tym podyskutowac :)</de:text>
-                                <de:replies/>
-                              </de:comment>
-                            </de:file>
-                          </de:folder>
-                          <de:folder name="generator">
-                            <de:file name="SchemaDataSetGenerator.java">
-                              <de:comment id="c14" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:17:58.711+02:00" last-modified="2013-05-07T13:35:52.727+02:00" priority="0" recipient="" status="1" revision="0">
-                                <de:text>Po co opakowywac ten wyjatek ?</de:text>
-                                <de:replies/>
-                              </de:comment>
-                              <de:comment id="c15" author="Kamil Soboń" reviewID="CAST-1987" creation-date="2013-04-18T16:18:35.328+02:00" last-modified="2013-05-07T13:35:55.959+02:00" priority="0" recipient="" status="1" revision="0">
-                                <de:text>Po co opakowywac ten wyjatek ?</de:text>
                                 <de:replies/>
                               </de:comment>
                             </de:file>

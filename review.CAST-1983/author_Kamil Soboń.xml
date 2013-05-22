@@ -15,7 +15,7 @@
                         <de:folder name="property">
                           <de:folder name="validator">
                             <de:file name="ExternalIdentifierCollectionPropertyValidator.java">
-                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-05-13T13:19:31.934+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c0" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-03-28T12:40:56.293+01:00" last-modified="2013-05-22T11:57:13.790+02:00" priority="0" recipient="" status="0" revision="0">
                                 <de:text>Bartek zmieni tą linijk ze wzgldu na serializatory custom propertiesów. Czy coś zmienialeś w tej logice ? Czy można to przywrócic ?
 
 Prawdopodbnie bedziesz mogl to przywrocic jak tylko skonczysz prace nad CAST-1988</de:text>
@@ -153,7 +153,7 @@ GML_FILE_EXTENSION = DATA_SOURCE_DIRECTORY</de:text>
                               <de:text>Ja bym scali użycie tej metody jakoś z getDataSet(UUID, IProgressStatusMonitor). One docelowo dzialaja tak samo bo deleguja zadanie do SchemGmlReader#readFile(). Różnicą jest sposob wyznaczenia sciezki do pliku. Tak czy siak jedna powinna korzytac z drugiej.</de:text>
                               <de:replies/>
                             </de:comment>
-                            <de:comment id="c61" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:48:26.768+02:00" last-modified="2013-05-07T10:36:31.664+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c61" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:48:26.768+02:00" last-modified="2013-05-22T11:57:36.187+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Co to znaczy, że ta metoda jest tylko do testowania ?</de:text>
                               <de:replies>
                                 <de:reply author="nowak" creation-date="2013-04-18T12:41:00.557+02:00">Bartek oparł testy GML na plikach GML stworzonych ręcznie. Jak dobrze rozumiem - nie powinno być możliwości odzcytywania z dowolnego pliku, tylko na podstawie UUID.</de:reply>
@@ -161,7 +161,7 @@ GML_FILE_EXTENSION = DATA_SOURCE_DIRECTORY</de:text>
 Co do samych testów to jak mniemam SchemaDataSource wprowadza nam abstrakcję powalająca na operowanie identyfkatorami zbiorów danych Schematycznych zmiast ściezkami do plików GML - zatem testy powinny operać się na wartwie niższej, która działa na plikach (SchemaGmlReader)</de:reply>
                               </de:replies>
                             </de:comment>
-                            <de:comment id="c62" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:49:06.104+02:00" last-modified="2013-05-07T10:36:52.238+02:00" priority="0" recipient="" status="0" revision="0">
+                            <de:comment id="c62" author="Kamil Soboń" reviewID="CAST-1983" creation-date="2013-04-18T09:49:06.104+02:00" last-modified="2013-05-22T11:57:43.771+02:00" priority="0" recipient="" status="2" revision="0">
                               <de:text>Co to znaczy, że ta metoda jest tylko do testowania ?</de:text>
                               <de:replies>
                                 <de:reply author="ksobon" creation-date="2013-05-07T10:36:47.556+02:00">To samo tutaj</de:reply>

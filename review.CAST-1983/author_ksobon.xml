@@ -33,7 +33,7 @@
                                 <de:text>Musimu to sprawdza za kazdym razem jak pobieramy szablon ?</de:text>
                                 <de:replies/>
                               </de:comment>
-                              <de:comment id="c7" author="ksobon" reviewID="CAST-1983" creation-date="2013-05-07T12:58:23.810+02:00" last-modified="2013-05-13T13:12:07.306+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c7" author="ksobon" reviewID="CAST-1983" creation-date="2013-05-07T12:58:23.810+02:00" last-modified="2013-05-14T09:42:31.770+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Nie lepiej podac w konstrukotrze cala liste szablonow ? Czy obecne rozwiazanie gdzie kiedykolwiek mozemy dodac nowy szablon jakos nam pomaga ?</de:text>
                                 <de:replies>
                                   <de:reply author="nowak" creation-date="2013-05-13T13:12:07.306+02:00">Ta klasa jest singletonem. Wzorowałem się na CustomTypeTemplateRegistry. Jeśli miałbym dać możliwość przekazywania całej listy template prez konstruktor, musiałbym zrezygnować z singletona.
@@ -59,7 +59,7 @@ Ta metoda używana jest w CustomTypeInjector, w pętli, w której rejestrowane s
                               </de:comment>
                             </de:file>
                             <de:file name="EdgeInjector.java">
-                              <de:comment id="c11" author="ksobon" reviewID="CAST-1983" creation-date="2013-05-07T13:13:09.267+02:00" last-modified="2013-05-07T13:13:17.852+02:00" priority="0" recipient="" status="0" revision="0">
+                              <de:comment id="c11" author="ksobon" reviewID="CAST-1983" creation-date="2013-05-07T13:13:09.267+02:00" last-modified="2013-05-14T09:51:20.051+02:00" priority="0" recipient="" status="2" revision="0">
                                 <de:text>Stworz z tego tez generator a nie injector</de:text>
                                 <de:replies/>
                               </de:comment>
